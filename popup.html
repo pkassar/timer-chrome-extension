@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <title>TIMER</title>
+
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+    <h1>TIMER</h1>
+    <div>
+        <h2>CS CLOCK</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6" style="margin-left:20px">
+            <h3>work<h3/>
+                <div class="buttons">
+                    <button onClick = "addTime()">+</button>
+                    <button onClick = "subtractTime()">-</button>
+                </div>
+        </div>
+        <div class="col-xs-6" style="margin-left:20px">
+            <h3>break<h3/>
+                <div class="buttons">
+                    <button>+</button>
+                    <button>-</button>
+
+                </div>
+        </div>
+    </div>
+    <div class="countdown">
+        <h3>Time left<h3/>
+        <h2 class="timeLeft">00:00<h2/>
+    </div>
+    <button onClick="countDown(min,sec)">START</button>
+</body>
+
+</html>
